@@ -1,0 +1,62 @@
+1. What is a Binary Search Tree (BST)?
+    a binary search tree is a binary tree  structure where each node has at most two children, named as the left child and the right child. 
+
+2. Properties of a Binary Search Tree (BST):
+- Ordering: All nodes in the left subtree are less than the node's value, and all nodes in the right subtree are greater.
+- Efficiency: Searching, insertion, and deletion operations can be performed in logarithmic time on average (O(log n) where n is the height of the tree
+- Traversal: Inorder traversal of a BST visits nodes in ascending order of their values.
+
+3. Why is in-order traversal useful in a BST?
+
+In-order traversal is useful in a BST because it visits nodes in sorted order of their keys. 
+This property makes it straightforward to retrieve elements in ascending order from the BST.
+
+4. Why does in-order traversal of a BST result in a sorted sequence of values?
+
+In-order traversal of a BST visits nodes in the following order:
+- Traverse the left subtree.
+- Visit the current node.
+- Traverse the right subtree.
+
+Since the left subtree contains values smaller than the current node and the right subtree contains values larger, visiting nodes in this order ensures that nodes are processed in ascending order of their values. Therefore, performing an in-order traversal on a BST results in a sorted sequence of node values.
+
+5. Time complexities of search, insertion, and deletion operations in a BST:
+
+- **Search**: Average and worst-case time complexity is O(log h) where h is the height of the tree
+- **Insertion**: Average and worst-case time complexity is O(log h) where h is the height of the tree
+- **Deletion**: Average and worst-case time complexity is O(log h) + reconstrcting the tree
+
+### 6. Average and worst-case time complexities of these operations:
+
+- Average Case: O(log n) for search, insertion, and deletion, assuming the tree is balanced.
+- Worst Case: O(n) for search, insertion, and deletion when the tree becomes degenerate (essentially a linked list).
+
+7. Difference between a BST and a balanced BST:
+
+- BST: A Binary Search Tree may become unbalanced depending on the order of insertions and deletions, leading to degraded performance (worst-case time complexities).
+  
+- Balanced BST: A balanced BST, such as an AVL tree or a Red-Black tree, maintains a balance condition that ensures operations remain efficient (O(log n) time complexity for all operations) regardless of the order of insertions and deletions.
+
+8. What makes a BST balanced and the advantages of a balanced BST over a regular BST:
+
+- Balanced Condition: A BST is considered balanced if for every node, the heights of its left and right subtrees differ by at most 1 (this condition ensures O(log n) operations).
+  
+- Advantages: Balanced BSTs guarantee logarithmic time complexity for search, insertion, and deletion operations in the worst case, providing predictable performance even with dynamic data sets.
+
+9. Real-world application of a BST:
+
+One real-world application of a BST is in the implementation of symbol tables and dictionaries in programming languages and databases. For example:
+- Symbol Tables: Used to store and retrieve variables, functions, and other identifiers efficiently during compilation or interpretation of programming languages.
+- Databases: Indexing structures like B-trees, which are a type of balanced BST, are used to organize and efficiently retrieve data.
+
+10. Examples where BSTs can be effectively used in real-world scenarios:
+
+- Organizing Contacts: Storing and quickly searching for contact information (names, phone numbers) in a contact management application.
+  
+- File System Structures: Organizing files and directories in a hierarchical file system to quickly locate and access files based on their names or metadata.
+
+- Auto-Completion Systems: Implementing auto-complete features in text editors or search engines to suggest and retrieve words or phrases based on partial input efficiently.
+
+- Range Queries: Efficiently finding all data points within a specific range (e.g., temperature readings between two dates) in environmental monitoring systems or financial data analysis.
+
+Binary search trees provide a flexible and efficient way to manage data that is naturally ordered or requires fast searching, insertion, and deletion operations. Their balanced variants extend these advantages to ensure consistent performance across various usage scenarios.
